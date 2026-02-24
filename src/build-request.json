@@ -1,0 +1,86 @@
+{
+  "kind": "build_request",
+  "title": "Create WiFi download speed optimization app",
+  "projectName": "WiFi Speed Booster",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a backend actor that analyzes WiFi connection parameters and provides optimization recommendations to improve download speeds",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend actor accepts WiFi connection data as input",
+        "System analyzes connection parameters and returns optimization suggestions",
+        "Recommendations are stored and retrievable"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Build a frontend interface where users can input their current WiFi settings and view personalized optimization tips to increase download speeds",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can enter WiFi connection details through a form",
+        "Optimization recommendations are displayed clearly",
+        "Interface shows before/after expected speed improvements"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Implement a speed testing feature that measures current download speed and tracks improvements over time",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can initiate a download speed test",
+        "Test results are displayed in Mbps",
+        "Historical speed data is stored and viewable as a trend chart"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Design a creative, modern visual theme for the app with a cohesive color scheme, typography, and layout that conveys speed and network connectivity. Use energetic colors (avoiding blue and purple unless specifically requested) and ensure consistent styling across all components",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "App has a distinct visual identity with consistent colors and fonts",
+        "Design elements reinforce the theme of speed and optimization",
+        "UI is visually cohesive across all pages and components"
+      ]
+    }
+  ],
+  "constraints": [
+    "Must work within Internet Computer platform constraints",
+    "Cannot integrate with external WiFi APIs or device-level controls",
+    "Speed testing must be simulation-based or use available web-based methods"
+  ],
+  "nonGoals": [
+    "Direct modification of device WiFi settings",
+    "Integration with router firmware",
+    "Real-time network packet analysis",
+    "VPN or proxy services"
+  ],
+  "imageRequirements": {
+    "required": [
+      "WiFi signal strength icon with radiating waves in a modern style (wifi-signal.dim_128x128.png)",
+      "Speed gauge or speedometer illustration showing fast download concept (speed-gauge.dim_256x256.png)"
+    ],
+    "edits": []
+  }
+}

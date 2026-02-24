@@ -1,0 +1,13 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets up TanStack Router with three routes (index/optimize and speed-test) and wraps them in a Layout component.",
+  "frontend/src/components/Layout.tsx": "Layout component providing consistent header with navigation, main content area with Outlet, and footer with branding and caffeine.ai attribution.",
+  "frontend/src/pages/OptimizePage.tsx": "Page component that displays WiFi optimization interface with form input and results display, managing state for WiFi configuration and recommendations.",
+  "frontend/src/pages/SpeedTestPage.tsx": "Page component that integrates speed test runner and trend chart, managing refresh triggers to update historical data after tests complete.",
+  "frontend/src/components/WiFiConfigForm.tsx": "Form component for collecting WiFi configuration details (SSID, channel, frequency, signal strength, interference) and calling backend analyzeWiFi method.",
+  "frontend/src/components/OptimizationResults.tsx": "Component displaying optimization recommendations from backend analysis with before/after comparisons and detailed explanations for channel, frequency, and signal improvements.",
+  "frontend/src/components/SpeedTestRunner.tsx": "Component that runs simulated speed tests with progress indicator, displays results, and records test data to backend via recordSpeedTest method.",
+  "frontend/src/components/SpeedTrendChart.tsx": "Component that fetches and displays historical speed test data using Recharts line chart with average speed and total tests statistics.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for fetching speed test trend data and recording new speed test results with automatic cache invalidation.",
+  "frontend/src/index.css": "Global styles with OKLCH color system using energetic green (hue 142) as primary and orange (hue 85) as accent, supporting both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme with custom fonts (Inter, JetBrains Mono), energetic color palette, custom shadows including glow effect, and animation utilities."
+}

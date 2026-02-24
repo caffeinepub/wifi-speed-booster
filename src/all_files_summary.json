@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Motoko actor implementing WiFi optimization analysis, speed test recording, and trend retrieval with per-user data storage using Principal-keyed maps.",
+  "feature_evidence.json": "Feature evidence report documenting three implemented features: WiFi optimization UI, speed testing with trend tracking, and modern visual theme with energetic colors.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of all frontend source files describing components, pages, hooks, and styling configuration.",
+  "frontend/index.css": "Tailwind CSS base styles defining OKLCH color system with light and dark mode variables for consistent theming across the application.",
+  "frontend/index.html": "HTML entry point for the React application with root div and module script reference to main.tsx.",
+  "frontend/src/App.tsx": "Root React component configuring TanStack Router with routes for optimize and speed-test pages wrapped in Layout component.",
+  "frontend/src/components/Layout.tsx": "Layout component providing sticky header with navigation, main content outlet, and footer with branding and caffeine.ai attribution.",
+  "frontend/src/components/OptimizationResults.tsx": "Displays WiFi optimization recommendations with before/after comparisons for channel, frequency, and signal strength improvements.",
+  "frontend/src/components/SpeedTestRunner.tsx": "Runs simulated speed tests with progress indicator, displays results with gauge visualization, and records data to backend.",
+  "frontend/src/components/SpeedTrendChart.tsx": "Displays a line chart of historical speed test results with average speed and total test count, fetching data via useSpeedTestTrend hook and refetching on refreshTrigger changes.",
+  "frontend/src/components/WiFiConfigForm.tsx": "Form component for entering WiFi configuration (SSID, channel, frequency, signal strength, interference) that calls the backend analyzeWiFi method and passes results to a callback.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and manages the backend actor instance based on Internet Identity authentication state, invalidating dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides React context and hooks for Internet Identity authentication, managing login/logout state and identity persistence using @dfinity/auth-client.",
+  "frontend/src/hooks/useQueries.ts": "Defines React Query hooks for fetching speed test trend data and recording new speed test results via the backend actor.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom CSS variables for light and dark theme colors, including primary, accent, and chart color definitions.",
+  "frontend/src/main.tsx": "Application entry point that sets up React Query and Internet Identity providers, then renders the App component.",
+  "frontend/src/pages/OptimizePage.tsx": "Page component that displays WiFiConfigForm and OptimizationResults, managing the analysis flow and state for WiFi optimization recommendations.",
+  "frontend/src/pages/SpeedTestPage.tsx": "Page component that displays SpeedTestRunner and SpeedTrendChart, coordinating refresh triggers when speed tests complete.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration file defining custom theme extensions including color schemes using OKLCH color space, typography with Inter and JetBrains Mono fonts, custom animations, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Project state metadata for a WiFi Speed Booster app tracking existing features (frontend interface, speed testing, modern visual theme) and pending feature requests (WiFi optimization functionality and backend analysis actor)."
+}
